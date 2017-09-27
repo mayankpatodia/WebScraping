@@ -29,6 +29,7 @@ class IndianPostScraper(object):
         profile = webdriver.FirefoxProfile()
         profile.accept_untrusted_certs = True
         
+        self.tracking_id = raw_input("Enter tracking id: ")
         #Set the url start the driver.
         self.url = "https://www.indiapost.gov.in/VAS/Pages/trackconsignment.aspx"
         self.driver = webdriver.Firefox(firefox_profile=profile)
@@ -57,7 +58,7 @@ class IndianPostScraper(object):
 
     #main scraping method. Crawls through the website to find the desired data
     def scrape(self):
-        cons_id = "RM719962415IN"
+        cons_id = self.tracking_id
 
         flag = True
         #Loop until we get the correct captcha
