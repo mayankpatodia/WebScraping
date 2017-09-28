@@ -1,5 +1,6 @@
 # WebScraping
 Scraping Indian Post to track consignment details
+Requires Firefox Browser to be installed
 
 Steps:
 1. Install python 3.4
@@ -30,3 +31,12 @@ Steps:
 	- Command: $ sudo pip install urllib
 
 7. Run the code
+
+
+Working:
+------------------
+1. Asks for tracking id as input in te terminal.
+2. Opens Firefox Browser.
+3. Selenium does the task of enterng the input and fetching the output.
+4. Browser closes.
+5. Prints the JSON in the terminal as desired.
