@@ -25,4 +25,8 @@ Steps:
 	 - Also try $ sudo easy_install pytesseract
 	 - URL: https://github.com/tesseract-ocr/tesseract/wiki
 
-6. Run the code
+6. I don't think you explicitly need to install urllib, but in case you need it,
+   Install urllib
+	- Command: $ sudo pip install urllib
+
+7. Run the code
